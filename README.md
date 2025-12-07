@@ -1,6 +1,8 @@
 # Portfolio
 
-Personal portfolio website built with Next.js, React, and TypeScript.
+[leozeng.tech](https://leozeng.tech)
+
+My personal portfolio website built with Next.js, React, and TypeScript.
 
 ## Tech Stack
 
@@ -9,16 +11,3 @@ Personal portfolio website built with Next.js, React, and TypeScript.
 - TypeScript
 - Tailwind CSS
 - Framer Motion
-
-## Getting Started
-
-```bash
-pnpm install
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the site.
-
-## Live Site
-
-Visit [leozeng.tech](https://leozeng.tech)
