@@ -1,6 +1,6 @@
-"use client";
-import React from 'react';
-import { motion } from 'framer-motion';
+'use client'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const skills = [
   { name: 'JavaScript', category: 'Language' },
@@ -15,7 +15,7 @@ const skills = [
   { name: 'Git', category: 'Tool' },
   { name: 'Docker', category: 'Tool' },
   { name: 'AWS', category: 'Cloud' },
-];
+]
 
 const Skills = () => {
   return (
@@ -28,7 +28,9 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center mb-10"
         >
-          <h2 className="text-3xl font-bold text-foreground whitespace-nowrap">Technical Skills</h2>
+          <h2 className="text-3xl font-bold text-foreground whitespace-nowrap">
+            Technical Skills
+          </h2>
           <div className="h-[1px] bg-border w-full ml-6 max-w-[300px]"></div>
         </motion.div>
 
@@ -43,14 +45,18 @@ const Skills = () => {
               whileHover={{ y: -5 }}
               className="bg-secondary/5 p-4 rounded-lg text-center border border-transparent hover:border-foreground transition-all duration-300 group cursor-default"
             >
-              <h3 className="text-foreground font-medium text-sm transition-colors">{skill.name}</h3>
-              <span className="text-xs text-secondary mt-2 block">{skill.category}</span>
+              <h3 className="text-foreground font-medium text-sm transition-colors">
+                {skill.name}
+              </h3>
+              <span className="text-xs text-secondary mt-2 block">
+                {skill.category}
+              </span>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

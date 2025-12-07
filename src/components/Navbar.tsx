@@ -1,42 +1,45 @@
-"use client";
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle';
+'use client'
+import React, { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Menu, X } from 'lucide-react'
+import { ThemeToggle } from './ThemeToggle'
 
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
-];
+]
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      setIsOpen(false);
-      element.scrollIntoView({ behavior: 'smooth' });
+      setScrolled(window.scrollY > 50)
     }
-  };
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault()
+    const element = document.querySelector(href)
+    if (element) {
+      setIsOpen(false)
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-background/80 backdrop-blur-md border-b border-border py-4' 
+        scrolled
+          ? 'bg-background/80 backdrop-blur-md border-b border-border py-4'
           : 'bg-transparent py-6'
       }`}
     >
@@ -67,13 +70,13 @@ const Navbar = () => {
               {link.name}
             </motion.a>
           ))}
-          
+
           <motion.div
-             initial={{ opacity: 0, y: -20 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.5, delay: 0.4 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
-             <ThemeToggle />
+            <ThemeToggle />
           </motion.div>
 
           <motion.a
@@ -131,7 +134,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "pnpx prettier --write . --ignore-path .gitignore --ignore-path .prettierignore",
+    "format:check": "pnpx prettier --check . --ignore-path .gitignore --ignore-path .prettierignore"
   },
   "dependencies": {
     "framer-motion": "^12.23.25",
