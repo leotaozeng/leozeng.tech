@@ -1,20 +1,20 @@
 'use client'
-import React from 'react'
+
 import { motion } from 'framer-motion'
 
 const skills = [
-  { name: 'JavaScript', category: 'Language' },
-  { name: 'TypeScript', category: 'Language' },
+  { name: 'TypeScript', category: 'Frontend' },
+  { name: 'JavaScript', category: 'Frontend' },
   { name: 'React', category: 'Frontend' },
   { name: 'Next.js', category: 'Frontend' },
-  { name: 'Tailwind CSS', category: 'Frontend' },
   { name: 'Node.js', category: 'Backend' },
   { name: 'Express', category: 'Backend' },
-  { name: 'PostgreSQL', category: 'Database' },
-  { name: 'MongoDB', category: 'Database' },
-  { name: 'Git', category: 'Tool' },
-  { name: 'Docker', category: 'Tool' },
-  { name: 'AWS', category: 'Cloud' },
+  { name: 'MongoDB', category: 'Backend' },
+  { name: 'PostgreSQL', category: 'Backend' },
+  { name: 'Expo', category: 'Frontend' },
+  { name: 'React Native', category: 'Frontend' },
+  { name: 'AWS', category: 'DevOps' },
+  { name: 'AliCloud', category: 'DevOps' },
 ]
 
 const Skills = () => {
@@ -31,7 +31,7 @@ const Skills = () => {
           <h2 className="text-3xl font-bold text-foreground whitespace-nowrap">
             Technical Skills
           </h2>
-          <div className="h-[1px] bg-border w-full ml-6 max-w-[300px]"></div>
+          <div className="h-px bg-border w-full ml-6 max-w-[300px]"></div>
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
