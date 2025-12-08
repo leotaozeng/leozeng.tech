@@ -31,7 +31,11 @@ export function ThemeToggle() {
       whileTap={{ scale: 0.9 }}
       onClick={toggleTheme}
       className="p-2 rounded-full hover:bg-secondary/10 transition-colors cursor-pointer"
-      aria-label={currentTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+      aria-label={
+        currentTheme === 'dark'
+          ? 'Switch to light theme'
+          : 'Switch to dark theme'
+      }
     >
       {currentTheme === 'dark' ? <Moon size={20} /> : <Sun size={20} />}
     </motion.button>
