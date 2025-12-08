@@ -21,7 +21,7 @@ export default function Home() {
       <div className="hidden md:block fixed bottom-0 left-10 z-10 text-secondary">
         <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-[1px] after:h-24 after:bg-secondary after:mt-6">
           <a
-            href="#"
+            href="https://github.com/leotaozeng"
             className="hover:text-foreground hover:-translate-y-1 transition-all duration-300"
           >
             <svg

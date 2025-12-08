@@ -34,14 +34,14 @@ const About = () => {
               together HTML & CSS was pretty fun!
             </p>
             <p className="mb-4">
-              Fast-forward to today, and I've had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
+              Fast-forward to today, and I&apos;ve had the privilege of working
+              at an advertising agency, a start-up, a huge corporation, and a
               student-led design studio. My main focus these days is building
               accessible, inclusive products and digital experiences at
               Upstatement.
             </p>
             <p className="mb-4">
-              Here are a few technologies I've been working with recently:
+              Here are a few technologies I&apos;ve been working with recently:
             </p>
             <ul className="grid grid-cols-2 gap-2 font-mono text-sm mt-4 text-foreground">
               <li className="flex items-center">
