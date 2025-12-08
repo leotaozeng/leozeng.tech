@@ -11,8 +11,8 @@ const skills = [
   { name: 'Express', category: 'Backend' },
   { name: 'MongoDB', category: 'Backend' },
   { name: 'PostgreSQL', category: 'Backend' },
-  { name: 'Expo', category: 'Frontend' },
-  { name: 'React Native', category: 'Frontend' },
+  { name: 'Expo', category: 'Mobile' },
+  { name: 'React Native', category: 'Mobile' },
   { name: 'AWS', category: 'DevOps' },
   { name: 'AliCloud', category: 'DevOps' },
 ]
