@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Meldd',
     description:
-      'A collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native/Expo and NestJS GraphQL. Includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
+      'A collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native/Expo and includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
     tech: ['React Native', 'Expo', 'NestJS', 'GraphQL', 'Spark LLM', 'DeepSeek'],
     github: 'https://github.com/TheProlog',
     external: 'https://app.meldd.com',
@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'HRHero',
     description:
-      'A video based talent and jobs marketplace and SaaS hiring tool / applicant tracking system.',
+      'A mobile-first, video-based jobs and talent marketplace / applicant tracking system.',
     tech: ['Vue.js', 'Quasar', 'NestJS', 'MySQL', 'Redis', 'AliCloud'],
     github: 'https://github.com/hrhero-seekr',
     external: 'https://hrheroapp.com/',
