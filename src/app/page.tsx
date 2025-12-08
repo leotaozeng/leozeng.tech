@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* Side Socials (Desktop) */}
       <div className="hidden md:block fixed bottom-0 left-10 z-10 text-secondary">
-        <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-[1px] after:h-24 after:bg-secondary after:mt-6">
+        <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-px after:h-24 after:bg-secondary after:mt-6">
           <a
             href="https://github.com/leotaozeng"
             className="hover:text-foreground hover:-translate-y-1 transition-all duration-300"
@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* Side Email (Desktop) */}
       <div className="hidden md:block fixed bottom-0 right-10 z-10 text-secondary">
-        <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-[1px] after:h-24 after:bg-secondary after:mt-6">
+        <div className="flex flex-col items-center space-y-6 after:content-[''] after:block after:w-px after:h-24 after:bg-secondary after:mt-6">
           <a
             href="mailto:hello@example.com"
             className="[writing-mode:vertical-rl] hover:text-foreground hover:-translate-y-1 transition-all duration-300 font-mono text-xs tracking-widest"
