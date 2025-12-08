@@ -13,12 +13,12 @@ const projects = [
     external: 'https://app.meldd.com',
   },
   {
-    title: 'Task Management App',
+    title: 'HRHero',
     description:
-      'A collaborative task management tool featuring drag-and-drop kanban boards, real-time updates via WebSockets, and team workspaces.',
-    tech: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-    github: '#',
-    external: '#',
+      'A video based talent and jobs marketplace and SaaS hiring tool / applicant tracking system.',
+    tech: ['Vue.js', 'Quasar', 'NestJS', 'MySQL', 'Redis', 'AliCloud'],
+    github: 'https://github.com/hrhero-seekr',
+    external: 'https://hrheroapp.com/',
   },
   {
     title: 'Weather Dashboard',
