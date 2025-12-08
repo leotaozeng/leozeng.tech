@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Meldd',
     description:
-      'Meldd is a collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native/Expo and NestJS GraphQL. Includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
+      'A collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native/Expo and NestJS GraphQL. Includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
     tech: ['React Native', 'Expo', 'NestJS', 'GraphQL', 'Spark LLM', 'DeepSeek'],
     github: 'https://github.com/TheProlog',
     external: 'https://app.meldd.com',
