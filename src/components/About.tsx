@@ -16,7 +16,7 @@ const About = () => {
           <h2 className="text-3xl font-bold text-foreground whitespace-nowrap">
             About Me
           </h2>
-          <div className="h-[1px] bg-border w-full ml-6 max-w-[300px]"></div>
+          <div className="h-px bg-border w-full ml-6 max-w-[300px]"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-12">

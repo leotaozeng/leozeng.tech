@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Leo | Software Developer Portfolio',
+  title: 'Leo Zeng',
   description:
     'Software developer specializing in building exceptional digital experiences.',
 }
@@ -34,6 +34,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          storageKey="portfolio-theme"
         >
           {children}
         </ThemeProvider>

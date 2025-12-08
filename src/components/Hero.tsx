@@ -16,7 +16,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="text-secondary font-medium text-lg mb-5"
           >
-            Hi, my name is
+            Hey! My name is
           </motion.p>
 
           <motion.h1
@@ -43,9 +43,9 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.9 }}
             className="text-secondary text-lg max-w-xl mb-12 leading-relaxed"
           >
-            I&apos;m a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I&apos;m focused
-            on building accessible, human-centered products.
+            I&apos;m a software engineer specializing in building (and
+            occasionally designing) exceptional digital experiences. Currently,
+            I&apos;m focused on building accessible, human-centered products.
           </motion.p>
 
           <motion.div

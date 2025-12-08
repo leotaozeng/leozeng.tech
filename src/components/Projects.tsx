@@ -52,7 +52,7 @@ const Projects = () => {
           <h2 className="text-3xl font-bold text-foreground whitespace-nowrap">
             Some Things I&apos;ve Built
           </h2>
-          <div className="h-[1px] bg-border w-full ml-6 max-w-[300px]"></div>
+          <div className="h-px bg-border w-full ml-6 max-w-[300px]"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -92,7 +92,7 @@ const Projects = () => {
                 {project.title}
               </h3>
 
-              <p className="text-secondary mb-6 flex-grow leading-relaxed">
+              <p className="text-secondary mb-6 grow leading-relaxed">
                 {project.description}
               </p>
 
