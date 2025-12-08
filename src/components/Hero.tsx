@@ -43,8 +43,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.9 }}
             className="text-secondary text-lg max-w-xl mb-12 leading-relaxed"
           >
-            I'm a software engineer specializing in building (and occasionally
-            designing) exceptional digital experiences. Currently, I'm focused
+            I&apos;m a software engineer specializing in building (and occasionally
+            designing) exceptional digital experiences. Currently, I&apos;m focused
             on building accessible, human-centered products.
           </motion.p>
 

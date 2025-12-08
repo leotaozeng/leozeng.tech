@@ -50,7 +50,7 @@ const Projects = () => {
           className="flex items-center mb-10"
         >
           <h2 className="text-3xl font-bold text-foreground whitespace-nowrap">
-            Some Things I've Built
+            Some Things I&apos;ve Built
           </h2>
           <div className="h-[1px] bg-border w-full ml-6 max-w-[300px]"></div>
         </motion.div>

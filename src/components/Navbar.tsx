@@ -114,7 +114,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="absolute top-full left-0 w-full bg-background border-b border-border flex flex-col items-center py-8 md:hidden shadow-lg"
           >
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}

@@ -16,7 +16,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-secondary font-medium text-lg mb-4"
         >
-          What's Next?
+          What&apos;s Next?
         </motion.p>
 
         <motion.h2
@@ -36,9 +36,9 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-secondary text-lg mb-12"
         >
-          Although I'm not currently looking for any new opportunities, my inbox
+          Although I&apos;m not currently looking for any new opportunities, my inbox
           is always open. Whether you have a question or just want to say hi,
-          I'll try my best to get back to you!
+          I&apos;ll try my best to get back to you!
         </motion.p>
 
         <motion.div
