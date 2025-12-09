@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -74,10 +75,13 @@ const About = () => {
           >
             {/* Image Placeholder Frame */}
             <div className="relative w-full aspect-square rounded-xl overflow-hidden z-10 bg-secondary/10 group-hover:bg-transparent transition-colors duration-300">
-              {/* Replace src with actual image */}
-              <div className="w-full h-full flex items-center justify-center text-foreground font-medium bg-secondary/5">
-                [Profile Image]
-              </div>
+              <Image
+                src="/images/profile.png"
+                alt="Leo Zeng"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Border offset effect */}
             <div className="absolute top-4 left-4 w-full h-full border-2 border-foreground rounded-xl -z-10 transition-all duration-300 group-hover:top-2 group-hover:left-2"></div>
