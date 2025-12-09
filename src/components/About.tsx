@@ -30,16 +30,15 @@ const About = () => {
           >
             <p className="mb-4">
               Hello! My name is Leo and I enjoy creating things that live on the
-              internet. My interest in web development started back in 2012 when
+              internet. My interest in web development started back in 2017 when
               I decided to try editing custom Tumblr themes — turns out hacking
               together HTML & CSS was pretty fun!
             </p>
             <p className="mb-4">
               Fast-forward to today, and I&apos;ve had the privilege of working
-              at an advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital experiences at
-              Upstatement.
+              at an advertising agency, multiple start-ups, and a medium-sized
+              corporation. My main focus these days is building accessible,
+              inclusive products and digital experiences.
             </p>
             <p className="mb-4">
               Here are a few technologies I&apos;ve been working with recently:
@@ -55,7 +54,8 @@ const About = () => {
                 <span className="text-secondary mr-2">▹</span> Next.js
               </li>
               <li className="flex items-center">
-                <span className="text-secondary mr-2">▹</span> React Native (Expo)
+                <span className="text-secondary mr-2">▹</span> React Native
+                (Expo)
               </li>
               <li className="flex items-center">
                 <span className="text-secondary mr-2">▹</span> Node.js
@@ -73,7 +73,6 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="relative group"
           >
-            {/* Image Placeholder Frame */}
             <div className="relative w-full aspect-square rounded-xl overflow-hidden z-10 bg-secondary/10 group-hover:bg-transparent transition-colors duration-300">
               <Image
                 src="/images/profile.png"
@@ -83,8 +82,6 @@ const About = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Border offset effect */}
-            <div className="absolute top-4 left-4 w-full h-full border-2 border-foreground rounded-xl -z-10 transition-all duration-300 group-hover:top-2 group-hover:left-2"></div>
           </motion.div>
         </div>
       </div>
