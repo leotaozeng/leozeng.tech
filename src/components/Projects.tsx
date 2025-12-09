@@ -42,7 +42,7 @@ const projects = [
     tech: ['Blockchain', 'Web3.js', 'Ethers.js', 'Polygon', 'Stripe'],
     github: 'https://github.com/hrhero-seekr',
     external: 'https://www.linkedin.com/company/gig-gly/',
-  }
+  },
 ]
 
 const Projects = () => {

@@ -36,9 +36,8 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-secondary text-lg mb-12"
         >
-          Although I&apos;m not currently looking for any new opportunities, my
-          inbox is always open. Whether you have a question or just want to say
-          hi, I&apos;ll try my best to get back to you!
+          I&apos;m always looking for new excitements, and my inbox is
+          open. <br /> Feel free to shoot me a message, and I&apos;ll try my best to get back to you!
         </motion.p>
 
         <motion.div
