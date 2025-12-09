@@ -13,46 +13,29 @@ const PlantLogo = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="text-foreground"
+      className="text-secondary"
       initial="hidden"
       animate="visible"
     >
-      {/* Stem: Curve from bottom center to slightly right top */}
+      {/* Leaf outline */}
       <motion.path
-        d="M12 22C12 22 12 2 12 2"
+        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
         variants={{
           hidden: { pathLength: 0, opacity: 0 },
           visible: {
             pathLength: 1,
             opacity: 1,
             transition: {
-              duration: 1,
-              ease: "easeOut"
-            }
-          }
+              duration: 1.2,
+              ease: 'easeOut',
+            },
+          },
         }}
       />
 
-      {/* Right Leaf: Sprout shape */}
+      {/* Stem / vein */}
       <motion.path
-        d="M12 14C16 14 20 10 20 6" // Simplified curve
-        variants={{
-          hidden: { pathLength: 0, opacity: 0 },
-          visible: {
-            pathLength: 1,
-            opacity: 1,
-            transition: {
-              duration: 0.8,
-              delay: 0.6,
-              ease: "easeOut"
-            }
-          }
-        }}
-      />
-
-      {/* Left Leaf: Smaller sprout shape */}
-      <motion.path
-        d="M12 14C8 14 4 11 4 8" // Simplified curve
+        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
         variants={{
           hidden: { pathLength: 0, opacity: 0 },
           visible: {
@@ -61,9 +44,9 @@ const PlantLogo = () => {
             transition: {
               duration: 0.8,
               delay: 0.8,
-              ease: "easeOut"
-            }
-          }
+              ease: 'easeOut',
+            },
+          },
         }}
       />
     </motion.svg>
