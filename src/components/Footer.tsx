@@ -1,4 +1,3 @@
-import React from 'react'
 import { Github, Linkedin, Twitter, Instagram } from 'lucide-react'
 
 const Footer = () => {
@@ -31,14 +30,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="text-secondary/60 font-mono text-xs hover:text-foreground transition-colors cursor-default">
-        <a
-          href="https://github.com/bchiang7/v4"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          Designed & Built by Leo
-        </a>
+        Designed & Built by Leo © {new Date().getFullYear()}
       </p>
     </footer>
   )

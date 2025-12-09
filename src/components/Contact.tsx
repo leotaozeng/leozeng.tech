@@ -36,8 +36,9 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-secondary text-lg mb-12"
         >
-          I&apos;m always looking for new excitements, and my inbox is
-          open. <br /> Feel free to shoot me a message, and I&apos;ll try my best to get back to you!
+          I&apos;m always looking for new excitements, and my inbox is open.{' '}
+          <br /> Feel free to shoot me a message, and I&apos;ll try my best to
+          get back to you!
         </motion.p>
 
         <motion.div
