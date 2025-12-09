@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-background py-8 text-center border-t border-border">
       <div className="flex justify-center space-x-6 mb-4 md:hidden">
         <a
-          href="#"
+          href="https://github.com/leotaozeng"
           className="text-secondary hover:text-foreground transition-colors"
         >
           <Github size={20} />
