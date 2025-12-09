@@ -28,12 +28,20 @@ const projects = [
     external: 'https://app.meldd.com',
   },
   {
+    title: 'Ecoimpresores',
+    description:
+      'An online printing and stationery platform where users can upload PDFs, configure print jobs with customization options, design custom notebooks, and purchase stationery products through Shopify integration',
+    tech: ['Next.js', 'React', 'TypeScript', 'Shopify'],
+    github: 'https://github.com/Eco-Impresores',
+    external: 'https://print.ecoimpresores.com',
+  },
+  {
     title: 'HRHero',
     description:
       'A mobile-first, video-based jobs and talent marketplace / applicant tracking system.',
     tech: ['Vue.js', 'Quasar', 'NestJS', 'MySQL', 'Redis', 'AliCloud'],
     github: 'https://github.com/hrhero-seekr',
-    external: 'https://hrheroapp.com/',
+    external: 'https://hrheroapp.com',
   },
   {
     title: 'Gig-gly',
@@ -41,7 +49,7 @@ const projects = [
       'A crypto-powered recruitment platform for web3. It uses blockchain, tokens, and referral rewards.',
     tech: ['Blockchain', 'Web3.js', 'Ethers.js', 'Polygon', 'Stripe'],
     github: 'https://github.com/hrhero-seekr',
-    external: 'https://www.linkedin.com/company/gig-gly/',
+    external: 'https://www.linkedin.com/company/gig-gly',
   },
 ]
 
