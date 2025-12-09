@@ -45,22 +45,22 @@ const About = () => {
             </p>
             <ul className="grid grid-cols-2 gap-2 font-mono text-sm mt-4 text-foreground">
               <li className="flex items-center">
-                <span className="text-secondary mr-2">▹</span> JavaScript (ES6+)
+                <span className="text-secondary mr-2">▹</span> TypeScript
               </li>
               <li className="flex items-center">
                 <span className="text-secondary mr-2">▹</span> React
               </li>
               <li className="flex items-center">
+                <span className="text-secondary mr-2">▹</span> Next.js
+              </li>
+              <li className="flex items-center">
+                <span className="text-secondary mr-2">▹</span> React Native (Expo)
+              </li>
+              <li className="flex items-center">
                 <span className="text-secondary mr-2">▹</span> Node.js
               </li>
               <li className="flex items-center">
-                <span className="text-secondary mr-2">▹</span> TypeScript
-              </li>
-              <li className="flex items-center">
-                <span className="text-secondary mr-2">▹</span> Tailwind CSS
-              </li>
-              <li className="flex items-center">
-                <span className="text-secondary mr-2">▹</span> Next.js
+                <span className="text-secondary mr-2">▹</span> Go
               </li>
             </ul>
           </motion.div>
