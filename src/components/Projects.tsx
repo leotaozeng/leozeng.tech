@@ -36,13 +36,13 @@ const projects = [
     external: 'https://hrheroapp.com/',
   },
   {
-    title: 'Portfolio V1',
+    title: 'Gig-gly',
     description:
-      'My first portfolio site built with plain HTML, CSS, and JavaScript. A great learning experience in responsive design.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: '#',
-    external: '#',
-  },
+      'A crypto-powered recruitment platform for web3. It uses blockchain, tokens, and referral rewards.',
+    tech: ['Blockchain', 'Web3.js', 'Ethers.js', 'Polygon', 'Stripe'],
+    github: 'https://github.com/hrhero-seekr',
+    external: 'https://www.linkedin.com/company/gig-gly/',
+  }
 ]
 
 const Projects = () => {
