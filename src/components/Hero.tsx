@@ -34,7 +34,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="text-4xl md:text-6xl font-bold text-secondary mb-8 tracking-tight"
           >
-            I build things for the web.
+            Code. Create. Innovate.
           </motion.h2>
 
           <motion.p
