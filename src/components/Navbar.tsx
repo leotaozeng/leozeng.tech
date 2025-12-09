@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { ThemeToggle } from './ThemeToggle'
+import PlantLogo from './PlantLogo'
 
 const navLinks = [
   { name: 'About', href: '#about' },
@@ -49,10 +50,10 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="font-bold text-xl font-mono tracking-tighter"
+          className="flex items-center"
           onClick={(e) => scrollToSection(e, '#hero')}
         >
-          Leo
+          <PlantLogo />
         </motion.a>
 
         {/* Desktop Menu */}
