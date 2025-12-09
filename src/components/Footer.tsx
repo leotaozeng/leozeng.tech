@@ -24,7 +24,7 @@ const Footer = () => {
           <Twitter size={20} />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/leotaozeng"
           className="text-secondary hover:text-foreground transition-colors"
         >
           <Instagram size={20} />
