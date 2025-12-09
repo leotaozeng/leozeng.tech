@@ -1,13 +1,21 @@
 'use client'
-import React from 'react'
+
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Folder } from 'lucide-react'
 
 const projects = [
   {
+    title: 'Tip Protector',
+    description:
+      'A cross-platform mobile tip calculator app built with React Native (Expo) that helps users calculate tips and protect against tip fraud.',
+    tech: ['React Native', 'Expo', 'TypeScript', 'Supabase', 'Monorepo'],
+    github: 'https://github.com/10thave-labs',
+    external: 'https://tipprotector.app',
+  },
+  {
     title: 'Meldd',
     description:
-      'A collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native/Expo and includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
+      'A collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native (Expo) and includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
     tech: ['React Native', 'Expo', 'NestJS', 'GraphQL', 'Spark LLM', 'DeepSeek'],
     github: 'https://github.com/TheProlog',
     external: 'https://app.meldd.com',
@@ -19,14 +27,6 @@ const projects = [
     tech: ['Vue.js', 'Quasar', 'NestJS', 'MySQL', 'Redis', 'AliCloud'],
     github: 'https://github.com/hrhero-seekr',
     external: 'https://hrheroapp.com/',
-  },
-  {
-    title: 'Weather Dashboard',
-    description:
-      'A sleek weather application providing detailed forecasts, historical data visualization, and location-based alerts using the OpenWeather API.',
-    tech: ['Vue.js', 'Chart.js', 'Tailwind', 'API'],
-    github: '#',
-    external: '#',
   },
   {
     title: 'Portfolio V1',
