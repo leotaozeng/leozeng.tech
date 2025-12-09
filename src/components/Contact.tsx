@@ -48,7 +48,7 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <a
-            href="mailto:hello@example.com"
+            href="mailto:leotaozeng@gmail.com"
             className="border border-foreground text-foreground px-8 py-4 rounded-lg hover:bg-foreground hover:text-background transition-colors font-medium text-sm inline-block"
           >
             Say Hello
