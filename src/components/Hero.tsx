@@ -44,8 +44,7 @@ const Hero = () => {
             className="text-secondary text-lg max-w-xl mb-12 leading-relaxed"
           >
             I&apos;m a software engineer specializing in turning ideas into
-            exceptional digital products. Currently, I&apos;m focused on
-            building accessible, human-centered products.
+            exceptional digital products.
           </motion.p>
 
           <motion.div
