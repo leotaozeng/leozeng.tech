@@ -8,6 +8,8 @@ import { notFound } from 'next/navigation'
 import { projects } from '@/data/projects'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import SideSocials from '@/components/SideSocials'
+import SideEmail from '@/components/SideEmail'
 
 interface ProjectPageProps {
   params: Promise<{ slug: string }>
@@ -99,6 +101,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         </div>
       </div>
       <Footer />
+      <SideSocials />
+      <SideEmail />
     </main>
   )
 }
