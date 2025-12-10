@@ -36,9 +36,10 @@ const About = () => {
             </p>
             <p className="mb-4">
               Fast-forward to today, and I&apos;ve had the privilege of working
-              at a leading brand experience agency, multiple start-ups, and a medium-sized
-              corporation between the US and China. My main focus these days is building accessible,
-              inclusive products and digital experiences.
+              at a leading brand experience agency, multiple start-ups, and a
+              medium-sized corporation between the US and China. My main focus
+              these days is building accessible, inclusive products and digital
+              experiences.
             </p>
             <p className="mb-4">
               Here are a few technologies I&apos;ve been working with recently:
