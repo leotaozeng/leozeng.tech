@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Github, Folder } from 'lucide-react'
+import { ExternalLink, Folder } from 'lucide-react'
 
 const projects = [
   {
@@ -50,7 +50,14 @@ const projects = [
     title: '一之己 by TOTEMIST',
     description:
       'A beauty/cosmetics e-commerce platform with customization and social features built with WeChat Mini Program.',
-    tech: ['WeChat Mini Program', 'Vue.js', 'PHP', 'Laravel', 'MySQL', 'AliCloud'],
+    tech: [
+      'WeChat Mini Program',
+      'Vue.js',
+      'PHP',
+      'Laravel',
+      'MySQL',
+      'AliCloud',
+    ],
     external: 'https://totemist.net/',
   },
 ]
