@@ -49,15 +49,8 @@ const projects = [
   {
     title: '一之己 by TOTEMIST',
     description:
-      'A beauty/cosmetics e-commerce platform with customization and social features built with WeChat Mini Program.',
-    tech: [
-      'WeChat Mini Program',
-      'Vue.js',
-      'PHP',
-      'Laravel',
-      'MySQL',
-      'AliCloud',
-    ],
+      'A beauty & cosmetics e-commerce platform with customization and social features built with WeChat Mini Program.',
+    tech: ['Vue.js', 'PHP', 'Laravel', 'MySQL', 'AliCloud'],
     external: 'https://totemist.net/',
   },
 ]
@@ -81,27 +74,26 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={project.external}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-secondary/5 p-8 rounded-xl shadow-sm hover:shadow-md border border-border flex flex-col h-full transition-all duration-300 group"
+              className="bg-secondary/5 p-8 rounded-xl shadow-sm hover:shadow-md border border-border flex flex-col h-full transition-all duration-300 group cursor-pointer"
             >
               <div className="flex justify-between items-center mb-6">
                 <div className="text-foreground">
                   <Folder size={40} strokeWidth={1.5} />
                 </div>
                 <div className="flex space-x-4 text-secondary">
-                  <a
-                    href={project.external}
-                    className="hover:text-foreground transition-colors"
-                    aria-label="External Link"
-                  >
+                  <div className="hover:text-foreground transition-colors">
                     <ExternalLink size={20} />
-                  </a>
+                  </div>
                 </div>
               </div>
 
@@ -118,7 +110,7 @@ const Projects = () => {
                   <li key={tech}>{tech}</li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
