@@ -89,13 +89,6 @@ const Projects = () => {
                 </div>
                 <div className="flex space-x-4 text-secondary">
                   <a
-                    href={project.github}
-                    className="hover:text-foreground transition-colors"
-                    aria-label="GitHub"
-                  >
-                    <Github size={20} />
-                  </a>
-                  <a
                     href={project.external}
                     className="hover:text-foreground transition-colors"
                     aria-label="External Link"
