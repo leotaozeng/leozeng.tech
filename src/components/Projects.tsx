@@ -9,7 +9,6 @@ const projects = [
     description:
       'A cross-platform mobile tip calculator app built with React Native (Expo) that helps users calculate tips and protect against tip fraud.',
     tech: ['React Native', 'Expo', 'TypeScript', 'Supabase', 'Monorepo'],
-    github: 'https://github.com/10thave-labs',
     external: 'https://tipprotector.app',
   },
   {
@@ -24,7 +23,6 @@ const projects = [
       'Spark LLM',
       'DeepSeek',
     ],
-    github: 'https://github.com/TheProlog',
     external: 'https://app.meldd.com',
   },
   {
@@ -32,7 +30,6 @@ const projects = [
     description:
       'An online printing and stationery platform where users can upload PDFs, configure print jobs with customization options, design custom notebooks, and purchase stationery products through Shopify integration',
     tech: ['Next.js', 'React', 'TypeScript', 'Shopify'],
-    github: 'https://github.com/Eco-Impresores',
     external: 'https://print.ecoimpresores.com',
   },
   {
@@ -40,7 +37,6 @@ const projects = [
     description:
       'A mobile-first, video-based jobs and talent marketplace / applicant tracking system.',
     tech: ['Vue.js', 'Quasar', 'NestJS', 'MySQL', 'Redis', 'AliCloud'],
-    github: 'https://github.com/hrhero-seekr',
     external: 'https://hrheroapp.com',
   },
   {
@@ -48,8 +44,14 @@ const projects = [
     description:
       'A crypto-powered recruitment platform for web3. It uses blockchain, tokens, and referral rewards.',
     tech: ['Blockchain', 'Web3.js', 'Ethers.js', 'Polygon', 'Stripe'],
-    github: 'https://github.com/hrhero-seekr',
     external: 'https://www.linkedin.com/company/gig-gly',
+  },
+  {
+    title: '一之己 by TOTEMIST',
+    description:
+      'A beauty/cosmetics e-commerce platform with customization and social features built with WeChat Mini Program.',
+    tech: ['WeChat Mini Program', 'Vue.js', 'PHP', 'Laravel', 'MySQL', 'AliCloud'],
+    external: 'https://totemist.net/',
   },
 ]
 
