@@ -41,7 +41,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/leotaozeng"
             className="hover:text-foreground hover:-translate-y-1 transition-all duration-300"
           >
             <svg
@@ -62,7 +62,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="#"
+            href="https://x.com/leotaozeng"
             className="hover:text-foreground hover:-translate-y-1 transition-all duration-300"
           >
             <svg

@@ -11,13 +11,13 @@ const Footer = () => {
           <Github size={20} />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/leotaozeng"
           className="text-secondary hover:text-foreground transition-colors"
         >
           <Linkedin size={20} />
         </a>
         <a
-          href="#"
+          href="https://x.com/leotaozeng"
           className="text-secondary hover:text-foreground transition-colors"
         >
           <Twitter size={20} />
