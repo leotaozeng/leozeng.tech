@@ -15,6 +15,8 @@ const skills = [
   { name: 'React Native', category: 'Mobile' },
   { name: 'AWS', category: 'DevOps' },
   { name: 'AliCloud', category: 'DevOps' },
+  { name: 'Golang', category: 'Languages' },
+  { name: 'Python', category: 'Languages' },
 ]
 
 const Skills = () => {
