@@ -54,18 +54,20 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             className="mb-12"
           >
             <div className="flex items-center gap-4 mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+                {project.title}
+              </h1>
               {project.logo && (
                 <Image
                   src={project.logo}
                   alt={`${project.title} logo`}
-                  width={64}
-                  height={64}
-                  className="object-contain"
+                  width={0}
+                  height={0}
+                  className="h-16 w-auto object-contain"
+                  sizes="(max-width: 768px) 64px, 80px"
+                  unoptimized
                 />
               )}
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-                {project.title}
-              </h1>
             </div>
             <p className="text-lg text-secondary leading-relaxed mb-8">
               {project.description}
