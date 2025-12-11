@@ -83,7 +83,7 @@ export const projects: Project[] = [
     tech: ['Blockchain', 'Web3.js', 'Ethers.js', 'Polygon', 'Stripe'],
     external: 'https://www.linkedin.com/company/gig-gly',
     slug: 'gig-gly',
-    logo: '/images/projects/gig-gly.svg',
+    logo: '/images/projects/gig-gly/logo.svg',
     images: [
       '/images/projects/gig-gly/job-listing.svg',
       '/images/projects/gig-gly/company.svg',
