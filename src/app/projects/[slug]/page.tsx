@@ -98,16 +98,33 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
-            {[1, 2, 3, 4].map((index) => (
-              <div
-                key={index}
-                className="aspect-video bg-secondary/10 border border-border rounded-xl flex items-center justify-center"
-              >
-                <span className="text-secondary/40 font-mono text-sm">
-                  Image {index}
-                </span>
-              </div>
-            ))}
+            {project.images && project.images.length > 0
+              ? project.images.map((image, index) => (
+                  <div
+                    key={index}
+                    className="aspect-video bg-secondary/10 border border-border rounded-xl overflow-hidden"
+                  >
+                    <Image
+                      src={image}
+                      alt={`${project.title} screenshot ${index + 1}`}
+                      width={0}
+                      height={0}
+                      className="w-full h-full object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      unoptimized
+                    />
+                  </div>
+                ))
+              : [1, 2, 3, 4].map((index) => (
+                  <div
+                    key={index}
+                    className="aspect-video bg-secondary/10 border border-border rounded-xl flex items-center justify-center"
+                  >
+                    <span className="text-secondary/40 font-mono text-sm">
+                      Image {index}
+                    </span>
+                  </div>
+                ))}
           </motion.div>
         </div>
       </div>

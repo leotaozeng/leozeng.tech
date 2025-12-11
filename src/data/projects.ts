@@ -5,6 +5,7 @@ export interface Project {
   external: string
   slug: string
   logo?: string
+  images?: string[]
 }
 
 export const projects: Project[] = [
@@ -83,5 +84,11 @@ export const projects: Project[] = [
     external: 'https://www.linkedin.com/company/gig-gly',
     slug: 'gig-gly',
     logo: '/images/projects/gig-gly.svg',
+    images: [
+      '/images/projects/gig-gly/job-listing.svg',
+      '/images/projects/gig-gly/company.svg',
+      '/images/projects/gig-gly/refer.svg',
+      '/images/projects/gig-gly/resume.svg',
+    ],
   },
 ]
