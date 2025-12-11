@@ -64,6 +64,7 @@ export const projects: Project[] = [
     tech: ['Vue.js', 'Quasar', 'NestJS', 'MySQL', 'Redis', 'AliCloud'],
     external: 'https://hrheroapp.com',
     slug: 'hrhero',
+    logo: '/images/projects/hrhero.jpeg',
   },
   {
     title: 'Gig-gly',
