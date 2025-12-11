@@ -73,6 +73,7 @@ export const projects: Project[] = [
     tech: ['Blockchain', 'Web3.js', 'Ethers.js', 'Polygon', 'Stripe'],
     external: 'https://www.linkedin.com/company/gig-gly',
     slug: 'gig-gly',
+    logo: '/images/projects/gig-gly.svg',
   },
   {
     title: '一之己 by TOTEMIST',
