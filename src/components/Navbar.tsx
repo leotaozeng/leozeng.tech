@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { usePathname, useRouter } from 'next/navigation'
 import { ThemeToggle } from './ThemeToggle'
 import PlantLogo from './PlantLogo'
 
@@ -15,6 +16,8 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,10 +32,15 @@ const Navbar = () => {
     href: string
   ) => {
     e.preventDefault()
-    const element = document.querySelector(href)
-    if (element) {
-      setIsOpen(false)
-      element.scrollIntoView({ behavior: 'smooth' })
+    setIsOpen(false)
+
+    if (pathname === '/') {
+      const element = document.querySelector(href)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      router.push(`/${href}`)
     }
   }
 
@@ -42,7 +50,7 @@ const Navbar = () => {
         scrolled
           ? 'bg-background/80 backdrop-blur-md border-b border-border py-4'
           : 'bg-transparent py-6'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <motion.a
