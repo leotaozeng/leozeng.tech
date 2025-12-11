@@ -18,6 +18,21 @@ export const projects: Project[] = [
     logo: '/images/projects/tip-protector.png',
   },
   {
+    title: 'Macau Grand Prix Museum',
+    description:
+      'In preparation for its 2021 reopening, the Macao Grand Prix Museum required a modern software solution to power its new "Tourism + Sports" interactive zones. The goal was to replace static displays with engaging, digital "racing scenarios" that visitors could control.',
+    tech: [
+      'Electron',
+      'Vue.js',
+      'Lottie',
+      'Node.js',
+      'Multimedia Hardware Integration',
+    ],
+    external: 'https://mgpm.macaotourism.gov.mo',
+    slug: 'macau-grand-prix-museum',
+    logo: '/images/projects/macau-grand-prix-museum.png',
+  },
+  {
     title: 'Meldd',
     description:
       'A collaborative document editing platform with real-time contributions, voting, and document history replay. Built with React Native (Expo) and includes AI integration using Spark LLM and DeepSeek to generate perspective opinions for topic clusters.',
