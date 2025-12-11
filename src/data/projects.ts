@@ -55,6 +55,7 @@ export const projects: Project[] = [
     tech: ['Next.js', 'React', 'TypeScript', 'Shopify'],
     external: 'https://print.ecoimpresores.com',
     slug: 'ecoimpresores',
+    logo: '/images/projects/ecoimpresores.svg',
   },
   {
     title: 'HRHero',

@@ -53,10 +53,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-12"
           >
-            <div className="flex items-center gap-4 mb-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-                {project.title}
-              </h1>
+            <div className="flex flex-col items-start gap-2 mb-6">
               {project.logo && (
                 <Image
                   src={project.logo}
@@ -68,6 +65,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   unoptimized
                 />
               )}
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+                {project.title}
+              </h1>
             </div>
             <p className="text-lg text-secondary leading-relaxed mb-8">
               {project.description}
