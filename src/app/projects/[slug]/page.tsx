@@ -169,7 +169,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors md:hidden"
               aria-label="Close image"
             >
               <X size={24} />
