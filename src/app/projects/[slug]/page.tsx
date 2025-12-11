@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowLeft, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { projects } from '@/data/projects'
 import Navbar from '@/components/Navbar'
@@ -52,9 +53,20 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-12"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              {project.title}
-            </h1>
+            <div className="flex items-center gap-4 mb-6">
+              {project.logo && (
+                <Image
+                  src={project.logo}
+                  alt={`${project.title} logo`}
+                  width={64}
+                  height={64}
+                  className="object-contain"
+                />
+              )}
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+                {project.title}
+              </h1>
+            </div>
             <p className="text-lg text-secondary leading-relaxed mb-8">
               {project.description}
             </p>

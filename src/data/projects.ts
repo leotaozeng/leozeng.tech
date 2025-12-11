@@ -4,6 +4,7 @@ export interface Project {
   tech: string[]
   external: string
   slug: string
+  logo?: string
 }
 
 export const projects: Project[] = [
@@ -14,6 +15,7 @@ export const projects: Project[] = [
     tech: ['React Native', 'Expo', 'TypeScript', 'Supabase', 'Monorepo'],
     external: 'https://tipprotector.app',
     slug: 'tip-protector',
+    logo: '/images/projects/tip-protector.png',
   },
   {
     title: 'Meldd',
