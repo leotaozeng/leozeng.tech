@@ -31,6 +31,7 @@ export const projects: Project[] = [
     ],
     external: 'https://app.meldd.com',
     slug: 'meldd',
+    logo: '/images/projects/meldd.png',
   },
   {
     title: 'Ecoimpresores',
