@@ -1,8 +1,7 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, ExternalLink } from 'lucide-react'
+import { ArrowLeft, ExternalLink, X } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
@@ -11,18 +10,38 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SideSocials from '@/components/SideSocials'
 import SideEmail from '@/components/SideEmail'
+import { use, useState, useEffect } from 'react'
 
 interface ProjectPageProps {
   params: Promise<{ slug: string }>
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = React.use(params)
+  const { slug } = use(params)
   const project = projects.find((p) => p.slug === slug)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   if (!project) {
     notFound()
   }
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSelectedImage(null)
+      }
+    }
+
+    if (selectedImage) {
+      document.addEventListener('keydown', handleEscape)
+      document.body.style.overflow = 'hidden'
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape)
+      document.body.style.overflow = 'unset'
+    }
+  }, [selectedImage])
 
   return (
     <main className="bg-background min-h-screen text-secondary selection:bg-foreground selection:text-background overflow-x-hidden transition-colors duration-300">
@@ -102,7 +121,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               ? project.images.map((image, index) => (
                   <div
                     key={index}
-                    className="aspect-video bg-secondary/10 border border-border rounded-xl overflow-hidden"
+                    onClick={() => setSelectedImage(image)}
+                    className="aspect-video bg-secondary/10 border border-border rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <Image
                       src={image}
@@ -131,6 +151,41 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       <Footer />
       <SideSocials />
       <SideEmail />
+
+      {selectedImage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+        >
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            onClick={(e) => e.stopPropagation()}
+            className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center"
+          >
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 hover:bg-background text-foreground transition-colors"
+              aria-label="Close image"
+            >
+              <X size={24} />
+            </button>
+            <Image
+              src={selectedImage}
+              alt={`${project.title} full size image`}
+              width={0}
+              height={0}
+              className="max-w-full max-h-[90vh] w-auto h-auto object-contain"
+              sizes="100vw"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+      )}
     </main>
   )
 }
