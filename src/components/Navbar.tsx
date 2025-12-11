@@ -50,7 +50,7 @@ const Navbar = () => {
         scrolled
           ? 'bg-background/80 backdrop-blur-md border-b border-border py-4'
           : 'bg-transparent py-6'
-        }`}
+      }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <motion.a
