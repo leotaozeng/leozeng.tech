@@ -122,14 +122,14 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   <div
                     key={index}
                     onClick={() => setSelectedImage(image)}
-                    className="aspect-video bg-secondary/10 border border-border rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                    className="aspect-video bg-white border border-border rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
                   >
                     <Image
                       src={image}
                       alt={`${project.title} screenshot ${index + 1}`}
                       width={0}
                       height={0}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       sizes="(max-width: 768px) 100vw, 50vw"
                       unoptimized
                     />

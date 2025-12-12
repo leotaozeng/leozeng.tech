@@ -56,7 +56,13 @@ export const projects: Project[] = [
     tech: ['Vue.js', 'PHP', 'Laravel', 'MySQL', 'AliCloud'],
     external: 'https://totemist.net/',
     slug: 'totemist',
-    logo: '/images/projects/totemist.jpg',
+    logo: '/images/projects/totemist/logo.jpg',
+    images: [
+      '/images/projects/totemist/mini-program.png',
+      '/images/projects/totemist/edit-NFC-upload.png',
+      '/images/projects/totemist/shade-picker.png',
+      '/images/projects/totemist/my-profile.png',
+    ],
   },
   {
     title: 'HRHero',
