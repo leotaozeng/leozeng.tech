@@ -30,13 +30,11 @@ const About = () => {
           >
             <p className="mb-4">
               Hello! My name is Leo and I enjoy creating things that live on the
-              internet. My interest in web development started back in 2017 when
-              I decided to try editing custom Tumblr themes — turns out hacking
-              together HTML & CSS was pretty fun!
+              internet. My interest in web development started back in 2017.
             </p>
             <p className="mb-4">
               Fast-forward to today, and I&apos;ve had the privilege of working
-              at a leading brand experience agency, multiple start-ups, and a
+              at a global brand experience agency, multiple start-ups, and a
               medium-sized corporation between the US and China. My main focus
               these days is building accessible, inclusive products and digital
               experiences.
